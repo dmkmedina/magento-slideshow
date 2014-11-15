@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<widgets>
+    <slideshow_slide type="slideshow/slide">
+        <name>Product Slideshow Slide</name>
+        <description type="desc">Create a slide for the homepage slideshow</description>
+
+        <parameters>
+            <slide_headline translate="label">
+                <!-- General option properties -->
+
+                <!-- Defines if the option is allowed to be empty -->
+                <required>0</required>
+
+                <!-- Defines if the option is visible in the edit form -->
+                <visible>1</visible>
+
+                <!-- Label for the edit form -->
+                <label>Headline</label>
+
+                <type>text</type>
+            </slide_headline>
+            <slide_content translate="label">
+                <!-- General option properties -->
+
+                <!-- Defines if the option is allowed to be empty -->
+                <required>0</required>
+
+                <!-- Defines if the option is visible in the edit form -->
+                <visible>1</visible>
+
+                <!-- Label for the edit form -->
+                <label>Content</label>
+
+                <type>text</type>
+            </slide_content>
+
+            <slide_image_small translate="label">
+                <label>Small Image</label>
+
+                <!-- Defines if the option is allowed to be empty -->
+                <required>1</required>
+
+                <!-- Defines if the option is visible in the edit form -->
+                <visible>1</visible>
+
+                <type>widgetimagechooser/chooser</type>
+                <description>Image width: 640</description>
+            </slide_image_small>
+
+            <slide_image_large translate="label">
+                <label>Large Image</label>
+
+                <!-- Defines if the option is allowed to be empty -->
+                <required>1</required>
+
+                <!-- Defines if the option is visible in the edit form -->
+                <visible>1</visible>
+
+                <type>widgetimagechooser/chooser</type>
+                <description>Image width: 1920</description>
+            </slide_image_large>
+
+            <template translate="label">
+                <label>Frontend Template</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <values>
+                    <text translate="label">
+                        <value>slideshow/slide.phtml</value>
+                        <label>Slide Template </label>
+                    </text>
+                </values>
+            </template>
+        </parameters>
+    </slideshow_slide>
+</widgets>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Developmint_Slideshow>
+            <version>0.0.1</version>
+        </Developmint_Slideshow>
+    </modules>
+    <global>
+        <blocks>
+            <slideshow>
+                <class>Developmint_Slideshow_Block</class>
+            </slideshow>
+        </blocks>
+    </global>
+</config>

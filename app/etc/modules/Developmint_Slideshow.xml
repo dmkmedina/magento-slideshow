@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Developmint_Slideshow>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends><Mage_Catalog/></depends>
+        </Developmint_Slideshow>
+    </modules>
+</config>

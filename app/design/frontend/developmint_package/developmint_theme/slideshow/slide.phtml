@@ -1,0 +1,25 @@
+<figure class="flexslider__slide">
+    <div class="grid-wrap">
+        <div class="content-block__center">
+            <div class="content-block__content  is-align-top">
+                <figcaption class="carousel-caption  is-center">
+                    <?php if ($headline && $headline != '') : ?>
+                        <h2 class="h1"><?php echo $headline; ?></h2>
+                    <?php endif; ?>
+                    <?php if ($content && $content != '') : ?>
+                        <h3>A<?php echo $content; ?></h3>
+                    <?php endif; ?>
+                </figcaption>
+            </div>
+        </div>
+        <div class="content-block__background  js-content-block-background">
+            <picture class="visuallyhidden">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $large_img; ?>" media="(min-width: 45em)">
+                <source srcset="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $small_img; ?>">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $small_img; ?>" alt="Sample">
+            </picture>
+        </div>
+    </div>
+</figure>
